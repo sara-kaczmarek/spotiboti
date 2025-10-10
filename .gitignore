@@ -30,11 +30,12 @@ wheels/
 sara_profile.json
 spotiboti_memory.json
 
-# All JSON data files EXCEPT enriched data
+# All JSON data files EXCEPT enriched data and cache
 *.json
 !requirements.json
 !package.json
 !data/enriched_spotify_data.json
+!data/artist_genres_cache.json
 
 # OS files
 .DS_Store
