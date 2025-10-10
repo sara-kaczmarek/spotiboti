@@ -94,21 +94,30 @@ def enrich_tracks(df, api):
     return df
 
 def remove_duplicates(existing_df, new_df):
-    """Remove tracks that already exist in the dataset"""
+    """Remove ONLY exact duplicate entries (same track at exact same timestamp)
+
+    This keeps all your listens - if you played the same song twice, both plays are kept!
+    We only filter out duplicates from re-running the API fetch (same timestamp = duplicate API call)
+    """
     if existing_df.empty:
         return new_df
 
-    # Create a key for deduplication (timestamp + track name + artist)
-    existing_df['dedup_key'] = existing_df['ts'].astype(str) + '_' + existing_df['master_metadata_track_name'] + '_' + existing_df['master_metadata_album_artist_name']
-    new_df['dedup_key'] = new_df['ts'].astype(str) + '_' + new_df['master_metadata_track_name'] + '_' + new_df['master_metadata_album_artist_name']
+    # Create a key for deduplication using ONLY timestamp
+    # This way, only exact duplicate API fetches are filtered, not repeated song plays
+    existing_df['dedup_key'] = existing_df['ts'].astype(str)
+    new_df['dedup_key'] = new_df['ts'].astype(str)
 
-    # Filter out duplicates
+    # Filter out only exact timestamp matches (duplicate API fetches)
     new_tracks = new_df[~new_df['dedup_key'].isin(existing_df['dedup_key'])].copy()
 
     # Drop the dedup key
     new_tracks = new_tracks.drop('dedup_key', axis=1)
 
-    print(f"📊 Found {len(new_tracks)} new tracks (filtered {len(new_df) - len(new_tracks)} duplicates)")
+    filtered_count = len(new_df) - len(new_tracks)
+    if filtered_count > 0:
+        print(f"📊 Found {len(new_tracks)} new tracks (filtered {filtered_count} exact duplicate timestamps from previous API calls)")
+    else:
+        print(f"📊 Found {len(new_tracks)} new tracks (no duplicates)")
 
     return new_tracks
 

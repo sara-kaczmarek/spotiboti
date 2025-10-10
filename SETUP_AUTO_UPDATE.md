@@ -79,7 +79,8 @@ It will run:
 - Spotify API returns max 50 tracks per request
 - Running every 6 hours = 4 times per day = 200 tracks max per day
 - If you listen to more than 200 tracks per day, some might be missed
-- Duplicates are automatically filtered out
+- **Important**: ALL your listens are kept! If you play the same song 10 times, all 10 plays are recorded
+- Only exact duplicate API fetches (same timestamp from re-running the script) are filtered
 
 ## Troubleshooting
 
