@@ -1,0 +1,60 @@
+name: Update Recent Tracks
+
+on:
+  schedule:
+    # Run every 6 hours (at 00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-tracks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pandas spotipy
+
+      - name: Create Spotify auth cache
+        run: |
+          mkdir -p .streamlit
+          cat > .streamlit/secrets.toml << EOF
+          SPOTIFY_CLIENT_ID = "${{ secrets.SPOTIFY_CLIENT_ID }}"
+          SPOTIFY_CLIENT_SECRET = "${{ secrets.SPOTIFY_CLIENT_SECRET }}"
+          EOF
+
+          # Create .spotify_cache with refresh token
+          cat > .spotify_cache << EOF
+          {
+            "access_token": "placeholder",
+            "token_type": "Bearer",
+            "expires_in": 3600,
+            "refresh_token": "${{ secrets.SPOTIFY_REFRESH_TOKEN }}",
+            "scope": "user-read-recently-played user-read-playback-state user-library-read user-top-read",
+            "expires_at": 0
+          }
+          EOF
+
+      - name: Fetch and update recent tracks
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        run: |
+          python update_recent_tracks.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add data/enriched_spotify_data.json data/artist_genres_cache.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🎵 Auto-update: Added recent tracks [$(date +'%Y-%m-%d %H:%M UTC')]" && git push)
