@@ -6,6 +6,10 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch: # Allow manual trigger
 
+  push:
+    branches:
+      - main # Also trigger on push to test it works
+
 jobs:
   update-tracks:
     runs-on: ubuntu-latest
