@@ -1,0 +1,754 @@
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.158.149:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.158.149:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.158.149:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.158.149:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.158.149:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.159.9:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:667 in code_to_exec                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:165 in _mpa_v1                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/nav[0m [31m [0m
+[31m [0m [2migation/[0m[1mpage.py[0m:300 in run                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_app.py[0m:2 in <module>                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 1 [0m[94mimport[0m[90m [0m[4;96mstreamlit[0m[90m [0m[94mas[0m[90m [0m[4;96mst[0m                                                          [31m [0m
+[31m [0m [31m❱ [0m 2 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96mspotify_rag[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m SpotifyRAG[0m                                              [31m [0m
+[31m [0m   [2m 3 [0m                                                                                [31m [0m
+[31m [0m   [2m 4 [0m[94mclass[0m[90m [0m[4;92mSpotifyApp[0m:                                                               [31m [0m
+[31m [0m   [2m 5 [0m[2m│   [0m[94mdef[0m[90m [0m[92m__init__[0m([96mself[0m):                                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_rag.py[0m:6 in <module>                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m  3 [0m[94mimport[0m[90m [0m[4;96mpandas[0m[90m [0m[94mas[0m[90m [0m[4;96mpd[0m                                                            [31m [0m
+[31m [0m   [2m  4 [0m[94mimport[0m[90m [0m[4;96mrequests[0m                                                                [31m [0m
+[31m [0m   [2m  5 [0m[94mimport[0m[90m [0m[4;96mchromadb[0m                                                                [31m [0m
+[31m [0m [31m❱ [0m  6 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96msentence_transformers[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m SentenceTransformer[0m                          [31m [0m
+[31m [0m   [2m  7 [0m[94mfrom[0m[90m [0m[4;96mspotify_utils[0m[90m [0m[94mimport[0m answer_factual_query                                 [31m [0m
+[31m [0m   [2m  8 [0m                                                                               [31m [0m
+[31m [0m   [2m  9 [0m[94mclass[0m[90m [0m[4;92mSpotifyRAG[0m:                                                              [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sentence_tran[0m [31m [0m
+[31m [0m [2msformers/[0m[1m__init__.py[0m:10 in <module>                                                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 7 [0m[94mimport[0m[90m [0m[4;96mos[0m                                                                       [31m [0m
+[31m [0m   [2m 8 [0m[94mimport[0m[90m [0m[4;96mwarnings[0m                                                                 [31m [0m
+[31m [0m   [2m 9 [0m                                                                                [31m [0m
+[31m [0m [31m❱ [0m10 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96msentence_transformers[0m[1;4;96m.[0m[1;4;96mbackend[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m ([0m                                     [31m [0m
+[31m [0m   [2m11 [0m[2m│   [0m[1;4mexport_dynamic_quantized_onnx_model,[0m                                        [31m [0m
+[31m [0m   [2m12 [0m[2m│   [0m[1;4mexport_optimized_onnx_model,[0m                                                [31m [0m
+[31m [0m   [2m13 [0m[2m│   [0m[1;4mexport_static_quantized_openvino_model,[0m                                     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sentence_tran[0m [31m [0m
+[31m [0m [2msformers/backend/[0m[1m__init__.py[0m:5 in <module>                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 2 [0m                                                                                [31m [0m
+[31m [0m   [2m 3 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mload[0m[90m [0m[94mimport[0m load_onnx_model, load_openvino_model                          [31m [0m
+[31m [0m   [2m 4 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96moptimize[0m[90m [0m[94mimport[0m export_optimized_onnx_model                               [31m [0m
+[31m [0m [31m❱ [0m 5 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96mquantize[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m export_dynamic_quantized_onnx_model, export_static_quanti[0m [31m [0m
+[31m [0m   [2m 6 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mutils[0m[90m [0m[94mimport[0m (                                                            [31m [0m
+[31m [0m   [2m 7 [0m[2m│   [0m_save_pretrained_wrapper,                                                   [31m [0m
+[31m [0m   [2m 8 [0m[2m│   [0mbackend_should_export,                                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sentence_tran[0m [31m [0m
+[31m [0m [2msformers/backend/[0m[1mquantize.py[0m:7 in <module>                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m  4 [0m[94mfrom[0m[90m [0m[4;96mtyping[0m[90m [0m[94mimport[0m TYPE_CHECKING, Literal                                      [31m [0m
+[31m [0m   [2m  5 [0m                                                                               [31m [0m
+[31m [0m   [2m  6 [0m[94mfrom[0m[90m [0m[4;96msentence_transformers[0m[4;96m.[0m[4;96mbackend[0m[4;96m.[0m[4;96mutils[0m[90m [0m[94mimport[0m save_or_push_to_hub_model      [31m [0m
+[31m [0m [31m❱ [0m  7 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96msentence_transformers[0m[1;4;96m.[0m[1;4;96mutil[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m disable_datasets_caching, is_datasets_a[0m [31m [0m
+[31m [0m   [2m  8 [0m                                                                               [31m [0m
+[31m [0m   [2m  9 [0mlogger = logging.getLogger([91m__name__[0m)                                           [31m [0m
+[31m [0m   [2m 10 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sentence_tran[0m [31m [0m
+[31m [0m [2msformers/util/[0m[1m__init__.py[0m:15 in <module>                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 12 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mfile_io[0m[90m [0m[94mimport[0m disabled_tqdm, http_get, is_sentence_transformer_model, l [31m [0m
+[31m [0m   [2m 13 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mhard_negatives[0m[90m [0m[94mimport[0m mine_hard_negatives                                [31m [0m
+[31m [0m   [2m 14 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mmisc[0m[90m [0m[94mimport[0m append_to_last_row, disable_datasets_caching, disable_loggin [31m [0m
+[31m [0m [31m❱ [0m 15 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96mretrieval[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m ([0m                                                       [31m [0m
+[31m [0m   [2m 16 [0m[2m│   [0m[1;4mcommunity_detection,[0m                                                       [31m [0m
+[31m [0m   [2m 17 [0m[2m│   [0m[1;4minformation_retrieval,[0m                                                     [31m [0m
+[31m [0m   [2m 18 [0m[2m│   [0m[1;4mparaphrase_mining,[0m                                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sentence_tran[0m [31m [0m
+[31m [0m [2msformers/util/[0m[1mretrieval.py[0m:13 in <module>                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 10 [0m[94mfrom[0m[90m [0m[4;96mtorch[0m[90m [0m[94mimport[0m Tensor                                                       [31m [0m
+[31m [0m   [2m 11 [0m[94mfrom[0m[90m [0m[4;96mtqdm[0m[4;96m.[0m[4;96mautonotebook[0m[90m [0m[94mimport[0m tqdm                                             [31m [0m
+[31m [0m   [2m 12 [0m                                                                               [31m [0m
+[31m [0m [31m❱ [0m 13 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96msimilarity[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m cos_sim[0m                                                [31m [0m
+[31m [0m   [2m 14 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mtensor[0m[90m [0m[94mimport[0m normalize_embeddings                                       [31m [0m
+[31m [0m   [2m 15 [0m                                                                               [31m [0m
+[31m [0m   [2m 16 [0mlogger = logging.getLogger([91m__name__[0m)                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sentence_tran[0m [31m [0m
+[31m [0m [2msformers/util/[0m[1msimilarity.py[0m:5 in <module>                                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m  2 [0m                                                                               [31m [0m
+[31m [0m   [2m  3 [0m[94mimport[0m[90m [0m[4;96mnumpy[0m[90m [0m[94mas[0m[90m [0m[4;96mnp[0m                                                             [31m [0m
+[31m [0m   [2m  4 [0m[94mimport[0m[90m [0m[4;96mtorch[0m                                                                   [31m [0m
+[31m [0m [31m❱ [0m  5 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96msklearn[0m[1;4;96m.[0m[1;4;96mmetrics[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m pairwise_distances[0m                                 [31m [0m
+[31m [0m   [2m  6 [0m[94mfrom[0m[90m [0m[4;96mtorch[0m[90m [0m[94mimport[0m Tensor                                                       [31m [0m
+[31m [0m   [2m  7 [0m[94mfrom[0m[90m [0m[4;96mtransformers[0m[4;96m.[0m[4;96mutils[0m[90m [0m[94mimport[0m logging                                         [31m [0m
+[31m [0m   [2m  8 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sklearn/[0m[1m__ini[0m [31m [0m
+[31m [0m [1mt__.py[0m:73 in <module>                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 70 [0m[2m│   [0m__check_build,                                                             [31m [0m
+[31m [0m   [2m 71 [0m[2m│   [0m_distributor_init,                                                         [31m [0m
+[31m [0m   [2m 72 [0m)                                                                              [31m [0m
+[31m [0m [31m❱ [0m 73 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96mbase[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m clone[0m  [2m# noqa: E402[0m                                          [31m [0m
+[31m [0m   [2m 74 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mutils[0m[4;96m.[0m[4;96m_show_versions[0m[90m [0m[94mimport[0m show_versions  [2m# noqa: E402[0m                  [31m [0m
+[31m [0m   [2m 75 [0m                                                                               [31m [0m
+[31m [0m   [2m 76 [0m_submodules = [                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sklearn/[0m[1mbase.[0m [31m [0m
+[31m [0m [1mpy[0m:19 in <module>                                                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m  16 [0m[94mfrom[0m[90m [0m[4;96m.[0m[90m [0m[94mimport[0m __version__                                                     [31m [0m
+[31m [0m   [2m  17 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96m_config[0m[90m [0m[94mimport[0m config_context, get_config                               [31m [0m
+[31m [0m   [2m  18 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mexceptions[0m[90m [0m[94mimport[0m InconsistentVersionWarning                            [31m [0m
+[31m [0m [31m❱ [0m  19 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96mutils[0m[1;4;96m.[0m[1;4;96m_metadata_requests[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m _MetadataRequester, _routing_enabled[0m    [31m [0m
+[31m [0m   [2m  20 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mutils[0m[4;96m.[0m[4;96m_missing[0m[90m [0m[94mimport[0m is_scalar_nan                                     [31m [0m
+[31m [0m   [2m  21 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mutils[0m[4;96m.[0m[4;96m_param_validation[0m[90m [0m[94mimport[0m validate_parameter_constraints           [31m [0m
+[31m [0m   [2m  22 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mutils[0m[4;96m.[0m[4;96m_repr_html[0m[4;96m.[0m[4;96mbase[0m[90m [0m[94mimport[0m ReprHTMLMixin, _HTMLDocumentationLinkMixin [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sklearn/utils[0m [31m [0m
+[31m [0m [2m/[0m[1m__init__.py[0m:9 in <module>                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 6 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96m.[0m[4;96mexceptions[0m[90m [0m[94mimport[0m DataConversionWarning                                  [31m [0m
+[31m [0m   [2m 7 [0m[94mfrom[0m[90m [0m[4;96m.[0m[90m [0m[94mimport[0m metadata_routing                                                  [31m [0m
+[31m [0m   [2m 8 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96m_bunch[0m[90m [0m[94mimport[0m Bunch                                                       [31m [0m
+[31m [0m [31m❱ [0m 9 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96m_chunking[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m gen_batches, gen_even_slices[0m                             [31m [0m
+[31m [0m   [2m10 [0m                                                                                [31m [0m
+[31m [0m   [2m11 [0m[2m# Make _safe_indexing importable from here for backward compat as this particul[0m [31m [0m
+[31m [0m   [2m12 [0m[2m# helper is considered semi-private and typically very useful for third-party[0m   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sklearn/utils[0m [31m [0m
+[31m [0m [2m/[0m[1m_chunking.py[0m:11 in <module>                                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m  8 [0m[94mimport[0m[90m [0m[4;96mnumpy[0m[90m [0m[94mas[0m[90m [0m[4;96mnp[0m                                                             [31m [0m
+[31m [0m   [2m  9 [0m                                                                               [31m [0m
+[31m [0m   [2m 10 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96m.[0m[4;96m_config[0m[90m [0m[94mimport[0m get_config                                               [31m [0m
+[31m [0m [31m❱ [0m 11 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96m_param_validation[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m Interval, validate_params[0m                       [31m [0m
+[31m [0m   [2m 12 [0m                                                                               [31m [0m
+[31m [0m   [2m 13 [0m                                                                               [31m [0m
+[31m [0m   [2m 14 [0m[94mdef[0m[90m [0m[92mchunk_generator[0m(gen, chunksize):                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sklearn/utils[0m [31m [0m
+[31m [0m [2m/[0m[1m_param_validation.py[0m:17 in <module>                                                 [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 14 [0m[94mfrom[0m[90m [0m[4;96mscipy[0m[4;96m.[0m[4;96msparse[0m[90m [0m[94mimport[0m csr_matrix, issparse                                  [31m [0m
+[31m [0m   [2m 15 [0m                                                                               [31m [0m
+[31m [0m   [2m 16 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96m.[0m[4;96m_config[0m[90m [0m[94mimport[0m config_context, get_config                               [31m [0m
+[31m [0m [31m❱ [0m 17 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96mvalidation[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m _is_arraylike_not_scalar[0m                               [31m [0m
+[31m [0m   [2m 18 [0m                                                                               [31m [0m
+[31m [0m   [2m 19 [0m                                                                               [31m [0m
+[31m [0m   [2m 20 [0m[94mclass[0m[90m [0m[4;92mInvalidParameterError[0m([96mValueError[0m, [96mTypeError[0m):                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/sklearn/utils[0m [31m [0m
+[31m [0m [2m/[0m[1mvalidation.py[0m:15 in <module>                                                        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m  12 [0m[94mfrom[0m[90m [0m[4;96mfunctools[0m[90m [0m[94mimport[0m reduce, wraps                                           [31m [0m
+[31m [0m   [2m  13 [0m[94mfrom[0m[90m [0m[4;96minspect[0m[90m [0m[94mimport[0m Parameter, isclass, signature                             [31m [0m
+[31m [0m   [2m  14 [0m                                                                              [31m [0m
+[31m [0m [31m❱ [0m  15 [1;4;94mimport[0m[1;4;90m [0m[1;4;96mjoblib[0m                                                                 [31m [0m
+[31m [0m   [2m  16 [0m[94mimport[0m[90m [0m[4;96mnumpy[0m[90m [0m[94mas[0m[90m [0m[4;96mnp[0m                                                            [31m [0m
+[31m [0m   [2m  17 [0m[94mimport[0m[90m [0m[4;96mscipy[0m[4;96m.[0m[4;96msparse[0m[90m [0m[94mas[0m[90m [0m[4;96msp[0m                                                     [31m [0m
+[31m [0m   [2m  18 [0m                                                                              [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/joblib/[0m[1m__init[0m [31m [0m
+[31m [0m [1m__.py[0m:114 in <module>                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m111 [0m                                                                               [31m [0m
+[31m [0m   [2m112 [0m[94mimport[0m[90m [0m[4;96mos[0m                                                                      [31m [0m
+[31m [0m   [2m113 [0m                                                                               [31m [0m
+[31m [0m [31m❱ [0m114 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96m_cloudpickle_wrapper[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m wrap_non_picklable_objects[0m                   [31m [0m
+[31m [0m   [2m115 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96m_parallel_backends[0m[90m [0m[94mimport[0m ParallelBackendBase                            [31m [0m
+[31m [0m   [2m116 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96m_store_backends[0m[90m [0m[94mimport[0m StoreBackendBase                                  [31m [0m
+[31m [0m   [2m117 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mcompressor[0m[90m [0m[94mimport[0m register_compressor                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/joblib/[0m[1m_cloud[0m [31m [0m
+[31m [0m [1mpickle_wrapper.py[0m:14 in <module>                                                     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m11 [0m                                                                                [31m [0m
+[31m [0m   [2m12 [0m                                                                                [31m [0m
+[31m [0m   [2m13 [0m[94mif[0m mp [95mis[0m [95mnot[0m [94mNone[0m:                                                              [31m [0m
+[31m [0m [31m❱ [0m14 [2m│   [0m[1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96mexternals[0m[1;4;96m.[0m[1;4;96mloky[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m wrap_non_picklable_objects[0m                      [31m [0m
+[31m [0m   [2m15 [0m[94melse[0m:                                                                           [31m [0m
+[31m [0m   [2m16 [0m[2m│   [0mwrap_non_picklable_objects = _my_wrap_non_picklable_objects                 [31m [0m
+[31m [0m   [2m17 [0m                                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/joblib/extern[0m [31m [0m
+[31m [0m [2mals/loky/[0m[1m__init__.py[0m:19 in <module>                                                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m16 [0m)                                                                               [31m [0m
+[31m [0m   [2m17 [0m                                                                                [31m [0m
+[31m [0m   [2m18 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96m_base[0m[90m [0m[94mimport[0m Future                                                       [31m [0m
+[31m [0m [31m❱ [0m19 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96mbackend[0m[1;4;96m.[0m[1;4;96mcontext[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m cpu_count[0m                                          [31m [0m
+[31m [0m   [2m20 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mbackend[0m[4;96m.[0m[4;96mreduction[0m[90m [0m[94mimport[0m set_loky_pickler                                 [31m [0m
+[31m [0m   [2m21 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mreusable_executor[0m[90m [0m[94mimport[0m get_reusable_executor                            [31m [0m
+[31m [0m   [2m22 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mcloudpickle_wrapper[0m[90m [0m[94mimport[0m wrap_non_picklable_objects                     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/joblib/extern[0m [31m [0m
+[31m [0m [2mals/loky/backend/[0m[1m__init__.py[0m:4 in <module>                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 1 [0m[94mimport[0m[90m [0m[4;96mos[0m                                                                       [31m [0m
+[31m [0m   [2m 2 [0m[94mfrom[0m[90m [0m[4;96mmultiprocessing[0m[90m [0m[94mimport[0m synchronize                                         [31m [0m
+[31m [0m   [2m 3 [0m                                                                                [31m [0m
+[31m [0m [31m❱ [0m 4 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96m.[0m[1;4;96mcontext[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m get_context[0m                                                [31m [0m
+[31m [0m   [2m 5 [0m                                                                                [31m [0m
+[31m [0m   [2m 6 [0m                                                                                [31m [0m
+[31m [0m   [2m 7 [0m[94mdef[0m[90m [0m[92m_make_name[0m():                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/joblib/extern[0m [31m [0m
+[31m [0m [2mals/loky/backend/[0m[1mcontext.py[0m:21 in <module>                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 18 [0m[94mimport[0m[90m [0m[4;96mmultiprocessing[0m[90m [0m[94mas[0m[90m [0m[4;96mmp[0m                                                   [31m [0m
+[31m [0m   [2m 19 [0m[94mfrom[0m[90m [0m[4;96mmultiprocessing[0m[90m [0m[94mimport[0m get_context [94mas[0m mp_get_context                      [31m [0m
+[31m [0m   [2m 20 [0m[94mfrom[0m[90m [0m[4;96mmultiprocessing[0m[4;96m.[0m[4;96mcontext[0m[90m [0m[94mimport[0m BaseContext                                [31m [0m
+[31m [0m [31m❱ [0m 21 [1;4;94mfrom[0m[1;4;90m [0m[1;4;96mconcurrent[0m[1;4;96m.[0m[1;4;96mfutures[0m[1;4;96m.[0m[1;4;96mprocess[0m[1;4;90m [0m[1;4;94mimport[0m[1;4m _MAX_WINDOWS_WORKERS[0m                    [31m [0m
+[31m [0m   [2m 22 [0m                                                                               [31m [0m
+[31m [0m   [2m 23 [0m                                                                               [31m [0m
+[31m [0m   [2m 24 [0m[94mfrom[0m[90m [0m[4;96m.[0m[4;96mprocess[0m[90m [0m[94mimport[0m LokyProcess, LokyInitMainProcess                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/l[0m [31m [0m
+[31m [0m [2mib/python3.12/concurrent/futures/[0m[1mprocess.py[0m:112 in <module>                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m109 [0m[2m# non-daemon threads. This is used instead of `atexit.register()` for[0m          [31m [0m
+[31m [0m   [2m110 [0m[2m# compatibility with subinterpreters, which no longer support daemon threads.[0m  [31m [0m
+[31m [0m   [2m111 [0m[2m# See bpo-39812 for context.[0m                                                   [31m [0m
+[31m [0m [31m❱ [0m112 [1;4mthreading._register_atexit(_python_exit)[0m                                       [31m [0m
+[31m [0m   [2m113 [0m                                                                               [31m [0m
+[31m [0m   [2m114 [0m[2m# Controls how many more calls than processes will be queued in the call queue[0m [31m [0m
+[31m [0m   [2m115 [0m[2m# A smaller number will mean that processes spend more time idle waiting for[0m   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/opt/homebrew/Cellar/python@3.12/3.12.11/Frameworks/Python.framework/Versions/3.12/l[0m [31m [0m
+[31m [0m [2mib/python3.12/[0m[1mthreading.py[0m:1561 in _register_atexit                                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m1558 [0m[2;33m│   [0m[33mFor similarity to atexit, the registered functions are called in reverse.[0m [31m [0m
+[31m [0m   [2m1559 [0m[2;33m│   [0m[33m"""[0m                                                                       [31m [0m
+[31m [0m   [2m1560 [0m[2m│   [0m[94mif[0m _SHUTTING_DOWN:                                                        [31m [0m
+[31m [0m [31m❱ [0m1561 [2m│   │   [0m[1;4;94mraise[0m[1;4m [0m[1;4;96mRuntimeError[0m[1;4m([0m[1;4;33m"[0m[1;4;33mcan[0m[1;4;33m'[0m[1;4;33mt register atexit after shutdown[0m[1;4;33m"[0m[1;4m)[0m            [31m [0m
+[31m [0m   [2m1562 [0m[2m│   [0m                                                                          [31m [0m
+[31m [0m   [2m1563 [0m[2m│   [0mcall = functools.partial(func, *arg, **kwargs)                            [31m [0m
+[31m [0m   [2m1564 [0m[2m│   [0m_threading_atexits.append(call)                                           [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mRuntimeError: [0mcan't register atexit after shutdown
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.159.9:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+Error retrieving chunks: Error executing plan: Internal error: Error finding id
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.159.9:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.159.9:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+Error retrieving chunks: Error executing plan: Internal error: Error finding id
+Error retrieving chunks: Error executing plan: Internal error: Error finding id
+Error retrieving chunks: Error executing plan: Internal error: Error finding id
+Error retrieving chunks: Error executing plan: Internal error: Error finding id
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.159.9:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+Collection has 258509 documents
+Error retrieving chunks: Error executing plan: Internal error: Error finding id
+Collection has 258509 documents
+Error retrieving chunks: Error executing plan: Internal error: Error finding id
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:667 in code_to_exec                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:165 in _mpa_v1                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/nav[0m [31m [0m
+[31m [0m [2migation/[0m[1mpage.py[0m:300 in run                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_app.py[0m:81 in <module>                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m78 [0m[2m│   [0mapp.render_main_page()                                                      [31m [0m
+[31m [0m   [2m79 [0m                                                                                [31m [0m
+[31m [0m   [2m80 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                      [31m [0m
+[31m [0m [31m❱ [0m81 [2m│   [0m[1;4mmain()[0m                                                                      [31m [0m
+[31m [0m   [2m82 [0m                                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_app.py[0m:78 in main                       [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m75 [0m                                                                                [31m [0m
+[31m [0m   [2m76 [0m[94mdef[0m[90m [0m[92mmain[0m():                                                                     [31m [0m
+[31m [0m   [2m77 [0m[2m│   [0mapp = SpotifyApp()                                                          [31m [0m
+[31m [0m [31m❱ [0m78 [2m│   [0m[1;4mapp.render_main_page()[0m                                                      [31m [0m
+[31m [0m   [2m79 [0m                                                                                [31m [0m
+[31m [0m   [2m80 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                      [31m [0m
+[31m [0m   [2m81 [0m[2m│   [0mmain()                                                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_app.py[0m:74 in render_main_page           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m71 [0m[2m│   │   [0m                                                                        [31m [0m
+[31m [0m   [2m72 [0m[2m│   │   [0m[2m# Add RAG chatbot section[0m                                               [31m [0m
+[31m [0m   [2m73 [0m[2m│   │   [0mst.markdown([33m"[0m[33m<br><br>[0m[33m"[0m, unsafe_allow_html=[94mTrue[0m)                         [31m [0m
+[31m [0m [31m❱ [0m74 [2m│   │   [0m[1;4;96mself[0m[1;4m.rag_bot.render_chat_interface()[0m                                    [31m [0m
+[31m [0m   [2m75 [0m                                                                                [31m [0m
+[31m [0m   [2m76 [0m[94mdef[0m[90m [0m[92mmain[0m():                                                                     [31m [0m
+[31m [0m   [2m77 [0m[2m│   [0mapp = SpotifyApp()                                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_rag.py[0m:590 in render_chat_interface     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0m[32m'SpotifyRAG'[0m object has no attribute [32m'retrieve_relevant_chunks'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/ele[0m [31m [0m
+[31m [0m [2mments/lib/[0m[1mimage_utils.py[0m:291 in image_to_url                                         [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: 
+[32m'../logo/spotiboti_transparent.png'[0m
+
+[3mDuring handling of the above exception, another exception occurred:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/[0m[1mmemory_media_file_storage.py[0m:164 in _read_file                                  [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mFileNotFoundError: [0m[1m[[0mErrno [1;36m2[0m[1m][0m No such file or directory: 
+[32m'../logo/spotiboti_transparent.png'[0m
+
+[3mThe above exception was the direct cause of the following exception:[0m
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:667 in code_to_exec                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:165 in _mpa_v1                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/nav[0m [31m [0m
+[31m [0m [2migation/[0m[1mpage.py[0m:300 in run                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:37 in <module>               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m34 [0m[2m│   [0mchatbot.render_chat_interface()                                             [31m [0m
+[31m [0m   [2m35 [0m                                                                                [31m [0m
+[31m [0m   [2m36 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                      [31m [0m
+[31m [0m [31m❱ [0m37 [2m│   [0m[1;4mmain()[0m                                                                      [31m [0m
+[31m [0m   [2m38 [0m                                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:29 in main                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m26 [0m[2m│   [0mst.markdown([33m'[0m[33m<div class=[0m[33m"[0m[33mspotiboti-header[0m[33m"[0m[33m>[0m[33m'[0m, unsafe_allow_html=[94mTrue[0m)       [31m [0m
+[31m [0m   [2m27 [0m[2m│   [0mcol1, col2, col3 = st.columns([[94m1[0m, [94m2[0m, [94m1[0m])                                    [31m [0m
+[31m [0m   [2m28 [0m[2m│   [0m[94mwith[0m col2:                                                                  [31m [0m
+[31m [0m [31m❱ [0m29 [2m│   │   [0m[1;4mst.image([0m[1;4;33m"[0m[1;4;33m../logo/spotiboti_transparent.png[0m[1;4;33m"[0m[1;4m, width=[0m[1;4;94m200[0m[1;4m)[0m                [31m [0m
+[31m [0m   [2m30 [0m[2m│   [0mst.markdown([33m'[0m[33m</div>[0m[33m'[0m, unsafe_allow_html=[94mTrue[0m)                               [31m [0m
+[31m [0m   [2m31 [0m[2m│   [0m                                                                            [31m [0m
+[31m [0m   [2m32 [0m[2m│   [0m[2m# Initialize and render chatbot[0m                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/[0m[1mmetrics_util.py[0m:443 in wrapped_func                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/ele[0m [31m [0m
+[31m [0m [2mments/[0m[1mimage.py[0m:207 in image                                                          [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/ele[0m [31m [0m
+[31m [0m [2mments/lib/[0m[1mimage_utils.py[0m:447 in marshall_images                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/ele[0m [31m [0m
+[31m [0m [2mments/lib/[0m[1mimage_utils.py[0m:303 in image_to_url                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/[0m[1mmedia_file_manager.py[0m:225 in add                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/[0m[1mmemory_media_file_storage.py[0m:114 in load_and_get_id                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/[0m[1mmemory_media_file_storage.py[0m:167 in _read_file                                  [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mMediaFileStorageError: [0mError opening [32m'../logo/spotiboti_transparent.png'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:667 in code_to_exec                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:165 in _mpa_v1                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/nav[0m [31m [0m
+[31m [0m [2migation/[0m[1mpage.py[0m:300 in run                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:46 in <module>               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:40 in main                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m37 [0m[2m│   [0mmain()                                                                      [31m [0m
+[31m [0m   [2m38 [0m                                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_chatbot.py[0m:467 in render_chat_interface [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m464 [0m[2m│   │   │   │   │   [0m                                                           [31m [0m
+[31m [0m   [2m465 [0m[2m│   │   │   │   │   [0m[94melse[0m:                                                      [31m [0m
+[31m [0m   [2m466 [0m[2m│   │   │   │   │   │   [0m[2m# General question - use Ollama directly[0m               [31m [0m
+[31m [0m [31m❱ [0m467 [2m│   │   │   │   │   │   [0mgeneral_spinner_text = [1;4mrandom[0m.choice([96mself[0m.general_load [31m [0m
+[31m [0m   [2m468 [0m[2m│   │   │   │   │   │   [0m[94mwith[0m st.spinner(general_spinner_text):                 [31m [0m
+[31m [0m   [2m469 [0m[2m│   │   │   │   │   │   │   [0mbot_response = [96mself[0m.query_ollama_general(user_inpu [31m [0m
+[31m [0m   [2m470 [0m                                                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mNameError: [0mname [32m'random'[0m is not defined
+Error analyzing query: 'hours_played'
+Error analyzing query: 'hours_played'
+Error analyzing query: 'hours_played'
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:667 in code_to_exec                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:165 in _mpa_v1                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/nav[0m [31m [0m
+[31m [0m [2migation/[0m[1mpage.py[0m:300 in run                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:46 in <module>               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m43 [0m[2m│   [0mrender_footer()                                                             [31m [0m
+[31m [0m   [2m44 [0m                                                                                [31m [0m
+[31m [0m   [2m45 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                      [31m [0m
+[31m [0m [31m❱ [0m46 [2m│   [0m[1;4mmain()[0m                                                                      [31m [0m
+[31m [0m   [2m47 [0m                                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:40 in main                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m37 [0m[2m│   [0m                                                                            [31m [0m
+[31m [0m   [2m38 [0m[2m│   [0m[2m# Initialize and render chatbot[0m                                             [31m [0m
+[31m [0m   [2m39 [0m[2m│   [0mchatbot = SpotifyChatbot()                                                  [31m [0m
+[31m [0m [31m❱ [0m40 [2m│   [0m[1;4mchatbot.render_chat_interface()[0m                                             [31m [0m
+[31m [0m   [2m41 [0m[2m│   [0m                                                                            [31m [0m
+[31m [0m   [2m42 [0m[2m│   [0m[2m# Add footer[0m                                                                [31m [0m
+[31m [0m   [2m43 [0m[2m│   [0mrender_footer()                                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_chatbot.py[0m:443 in render_chat_interface [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m440 [0m[2m│   │   │   │   │   [0mst.rerun()                                                 [31m [0m
+[31m [0m   [2m441 [0m[2m│   │   │   [0m                                                                   [31m [0m
+[31m [0m   [2m442 [0m[2m│   │   │   [0m[94mwith[0m col2:                                                         [31m [0m
+[31m [0m [31m❱ [0m443 [2m│   │   │   │   [0mmemory_stats = [1;4;96mself[0m[1;4m.memory.get_memory_stats()[0m                  [31m [0m
+[31m [0m   [2m444 [0m[2m│   │   │   │   [0mst.caption([33mf[0m[33m"[0m[33m🧠 Memory: [0m[33m{[0mmemory_stats[[33m'[0m[33mtotal_insights[0m[33m'[0m][33m}[0m[33m insig[0m [31m [0m
+[31m [0m   [2m445 [0m[2m│   │   [0m                                                                       [31m [0m
+[31m [0m   [2m446 [0m[2m│   │   [0m[2m# Initialize chat history[0m                                              [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotiboti_memory.py[0m:140 in get_memory_stats     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m137 [0m[2m│   │   [0m[94mreturn[0m {                                                               [31m [0m
+[31m [0m   [2m138 [0m[2m│   │   │   [0m[33m"[0m[33mtotal_insights[0m[33m"[0m: [96mlen[0m([96mself[0m.memory[[33m"[0m[33mconversation_insights[0m[33m"[0m]),       [31m [0m
+[31m [0m   [2m139 [0m[2m│   │   │   [0m[33m"[0m[33mtotal_feedback[0m[33m"[0m: [96mlen[0m([96mself[0m.memory[[33m"[0m[33muser_feedback[0m[33m"[0m]),               [31m [0m
+[31m [0m [31m❱ [0m140 [2m│   │   │   [0m[33m"[0m[33mmusic_preferences[0m[33m"[0m: [96mlen[0m([1;4;96mself[0m[1;4m.memory[[0m[1;4;33m"[0m[1;4;33mmusic_preferences[0m[1;4;33m"[0m[1;4m][0m),        [31m [0m
+[31m [0m   [2m141 [0m[2m│   │   │   [0m[33m"[0m[33msessions[0m[33m"[0m: [96mself[0m.memory[[33m"[0m[33msession_count[0m[33m"[0m],                          [31m [0m
+[31m [0m   [2m142 [0m[2m│   │   │   [0m[33m"[0m[33mlast_updated[0m[33m"[0m: [96mself[0m.memory.get([33m"[0m[33mlast_updated[0m[33m"[0m)                    [31m [0m
+[31m [0m   [2m143 [0m[2m│   │   [0m}                                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mKeyError: [0m[32m'music_preferences'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:667 in code_to_exec                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:165 in _mpa_v1                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/nav[0m [31m [0m
+[31m [0m [2migation/[0m[1mpage.py[0m:300 in run                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:46 in <module>               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m43 [0m[2m│   [0mrender_footer()                                                             [31m [0m
+[31m [0m   [2m44 [0m                                                                                [31m [0m
+[31m [0m   [2m45 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                      [31m [0m
+[31m [0m [31m❱ [0m46 [2m│   [0m[1;4mmain()[0m                                                                      [31m [0m
+[31m [0m   [2m47 [0m                                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:40 in main                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m37 [0m[2m│   [0m                                                                            [31m [0m
+[31m [0m   [2m38 [0m[2m│   [0m[2m# Initialize and render chatbot[0m                                             [31m [0m
+[31m [0m   [2m39 [0m[2m│   [0mchatbot = SpotifyChatbot()                                                  [31m [0m
+[31m [0m [31m❱ [0m40 [2m│   [0m[1;4mchatbot.render_chat_interface()[0m                                             [31m [0m
+[31m [0m   [2m41 [0m[2m│   [0m                                                                            [31m [0m
+[31m [0m   [2m42 [0m[2m│   [0m[2m# Add footer[0m                                                                [31m [0m
+[31m [0m   [2m43 [0m[2m│   [0mrender_footer()                                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_chatbot.py[0m:443 in render_chat_interface [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m440 [0m[2m│   │   │   │   │   [0mst.rerun()                                                 [31m [0m
+[31m [0m   [2m441 [0m[2m│   │   │   [0m                                                                   [31m [0m
+[31m [0m   [2m442 [0m[2m│   │   │   [0m[94mwith[0m col2:                                                         [31m [0m
+[31m [0m [31m❱ [0m443 [2m│   │   │   │   [0mmemory_stats = [1;4;96mself[0m[1;4m.memory.get_memory_stats()[0m                  [31m [0m
+[31m [0m   [2m444 [0m[2m│   │   │   │   [0mst.caption([33mf[0m[33m"[0m[33m🧠 Memory: [0m[33m{[0mmemory_stats[[33m'[0m[33mtotal_insights[0m[33m'[0m][33m}[0m[33m insig[0m [31m [0m
+[31m [0m   [2m445 [0m[2m│   │   [0m                                                                       [31m [0m
+[31m [0m   [2m446 [0m[2m│   │   [0m[2m# Initialize chat history[0m                                              [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotiboti_memory.py[0m:140 in get_memory_stats     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m137 [0m[2m│   │   [0m[94mreturn[0m {                                                               [31m [0m
+[31m [0m   [2m138 [0m[2m│   │   │   [0m[33m"[0m[33mtotal_insights[0m[33m"[0m: [96mlen[0m([96mself[0m.memory[[33m"[0m[33mconversation_insights[0m[33m"[0m]),       [31m [0m
+[31m [0m   [2m139 [0m[2m│   │   │   [0m[33m"[0m[33mtotal_feedback[0m[33m"[0m: [96mlen[0m([96mself[0m.memory[[33m"[0m[33muser_feedback[0m[33m"[0m]),               [31m [0m
+[31m [0m [31m❱ [0m140 [2m│   │   │   [0m[33m"[0m[33mmusic_preferences[0m[33m"[0m: [96mlen[0m([1;4;96mself[0m[1;4m.memory[[0m[1;4;33m"[0m[1;4;33mmusic_preferences[0m[1;4;33m"[0m[1;4m][0m),        [31m [0m
+[31m [0m   [2m141 [0m[2m│   │   │   [0m[33m"[0m[33msessions[0m[33m"[0m: [96mself[0m.memory[[33m"[0m[33msession_count[0m[33m"[0m],                          [31m [0m
+[31m [0m   [2m142 [0m[2m│   │   │   [0m[33m"[0m[33mlast_updated[0m[33m"[0m: [96mself[0m.memory.get([33m"[0m[33mlast_updated[0m[33m"[0m)                    [31m [0m
+[31m [0m   [2m143 [0m[2m│   │   [0m}                                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mKeyError: [0m[32m'music_preferences'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                  [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:667 in code_to_exec                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/run[0m [31m [0m
+[31m [0m [2mtime/scriptrunner/[0m[1mscript_runner.py[0m:165 in _mpa_v1                                    [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/venv/lib/python3.12/site-packages/streamlit/nav[0m [31m [0m
+[31m [0m [2migation/[0m[1mpage.py[0m:300 in run                                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:46 in <module>               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m43 [0m[2m│   [0mrender_footer()                                                             [31m [0m
+[31m [0m   [2m44 [0m                                                                                [31m [0m
+[31m [0m   [2m45 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                      [31m [0m
+[31m [0m [31m❱ [0m46 [2m│   [0m[1;4mmain()[0m                                                                      [31m [0m
+[31m [0m   [2m47 [0m                                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/pages/[0m[1mspotiboti.py[0m:40 in main                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m37 [0m[2m│   [0m                                                                            [31m [0m
+[31m [0m   [2m38 [0m[2m│   [0m[2m# Initialize and render chatbot[0m                                             [31m [0m
+[31m [0m   [2m39 [0m[2m│   [0mchatbot = SpotifyChatbot()                                                  [31m [0m
+[31m [0m [31m❱ [0m40 [2m│   [0m[1;4mchatbot.render_chat_interface()[0m                                             [31m [0m
+[31m [0m   [2m41 [0m[2m│   [0m                                                                            [31m [0m
+[31m [0m   [2m42 [0m[2m│   [0m[2m# Add footer[0m                                                                [31m [0m
+[31m [0m   [2m43 [0m[2m│   [0mrender_footer()                                                             [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotify_chatbot.py[0m:461 in render_chat_interface [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m458 [0m[2m│   │   │   │   │   [0m[94mwith[0m st.chat_message([33m"[0m[33massistant[0m[33m"[0m):                         [31m [0m
+[31m [0m   [2m459 [0m[2m│   │   │   │   │   │   [0mst.write([33mf[0m[33m"[0m[33m**SpotiBoti:** [0m[33m{[0mchat[[33m'[0m[33mmessage[0m[33m'[0m][33m}[0m[33m"[0m)          [31m [0m
+[31m [0m   [2m460 [0m[2m│   │   [0m                                                                       [31m [0m
+[31m [0m [31m❱ [0m461 [2m│   │   [0m                                                                       [31m [0m
+[31m [0m   [2m462 [0m[2m│   │   [0m[2m# Simple chat styling - static positioning[0m                             [31m [0m
+[31m [0m   [2m463 [0m[2m│   │   [0mst.markdown([33m"""[0m                                                        [31m [0m
+[31m [0m   [2m464 [0m[2;33m│   │   [0m[33m<style>[0m                                                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/Users/sarakaczmarek/Desktop/Spotify/[0m[1mspotiboti_memory.py[0m:140 in get_memory_stats     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m137 [0m[2m│   │   [0m[94mreturn[0m {                                                               [31m [0m
+[31m [0m   [2m138 [0m[2m│   │   │   [0m[33m"[0m[33mtotal_insights[0m[33m"[0m: [96mlen[0m([96mself[0m.memory[[33m"[0m[33mconversation_insights[0m[33m"[0m]),       [31m [0m
+[31m [0m   [2m139 [0m[2m│   │   │   [0m[33m"[0m[33mtotal_feedback[0m[33m"[0m: [96mlen[0m([96mself[0m.memory[[33m"[0m[33muser_feedback[0m[33m"[0m]),               [31m [0m
+[31m [0m [31m❱ [0m140 [2m│   │   │   [0m[33m"[0m[33mmusic_preferences[0m[33m"[0m: [96mlen[0m([1;4;96mself[0m[1;4m.memory[[0m[1;4;33m"[0m[1;4;33mmusic_preferences[0m[1;4;33m"[0m[1;4m][0m),        [31m [0m
+[31m [0m   [2m141 [0m[2m│   │   │   [0m[33m"[0m[33msessions[0m[33m"[0m: [96mself[0m.memory[[33m"[0m[33msession_count[0m[33m"[0m],                          [31m [0m
+[31m [0m   [2m142 [0m[2m│   │   │   [0m[33m"[0m[33mlast_updated[0m[33m"[0m: [96mself[0m.memory.get([33m"[0m[33mlast_updated[0m[33m"[0m)                    [31m [0m
+[31m [0m   [2m143 [0m[2m│   │   [0m}                                                                      [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mKeyError: [0m[32m'music_preferences'[0m
+Error analyzing query: SpotifyDataQuery.analyze_query() takes 2 positional arguments but 3 were given
+Error analyzing query: SpotifyDataQuery.analyze_query() takes 2 positional arguments but 3 were given
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://10.147.26.196:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://127.0.0.1:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.2.1:8501
+  External URL: http://86.80.123.68:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.2.1:8501
+  External URL: http://86.80.123.68:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.2.1:8501
+  External URL: http://86.80.123.68:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+  Stopping...
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.2.1:8501
+  External URL: http://86.80.123.68:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
