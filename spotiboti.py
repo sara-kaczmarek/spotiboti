@@ -72,6 +72,10 @@ class SpotifyChatbot:
                 self.spotify_data = json.load(f)
             self.df = pd.DataFrame(self.spotify_data)
             self.df['ts'] = pd.to_datetime(self.df['ts'])
+        except FileNotFoundError:
+            self.spotify_data = None
+            self.df = None
+            st.warning("⚠️ Spotify data file not found. SpotiBoti can still answer general questions!")
         except Exception as e:
             self.spotify_data = None
             self.df = None
