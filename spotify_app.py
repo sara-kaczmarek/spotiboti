@@ -60,7 +60,6 @@ class SpotifyApp:
     def render_main_page(self):
         # Header
         st.markdown('<div class="main-header">Sara\'s Spotify</div>', unsafe_allow_html=True)
-        st.markdown('<p style="text-align: center; color: #b3b3b3; margin-top: -1rem;">Explore my personal music journey 🎵</p>', unsafe_allow_html=True)
 
         # Spotify Logo
         st.markdown("""
