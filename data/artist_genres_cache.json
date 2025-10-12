@@ -327,5 +327,99 @@
       "moombahton"
     ],
     "updated": "2025-10-11T18:16:58.894781"
+  },
+  "KATSEYE": {
+    "genres": [
+      "k-pop"
+    ],
+    "updated": "2025-10-12T12:25:28.133207"
+  },
+  "Asake": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropiano",
+      "afro adura",
+      "afropop",
+      "amapiano",
+      "afroswing",
+      "afro r&b"
+    ],
+    "updated": "2025-10-12T12:25:28.459145"
+  },
+  "melvitto": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "alté",
+      "afro r&b",
+      "afroswing",
+      "afropop",
+      "afro soul"
+    ],
+    "updated": "2025-10-12T12:25:28.981199"
+  },
+  "Drake": {
+    "genres": [
+      "rap"
+    ],
+    "updated": "2025-10-12T12:25:29.615436"
+  },
+  "Darkoo": {
+    "genres": [
+      "afrobeats",
+      "afroswing",
+      "afrobeat",
+      "uk drill"
+    ],
+    "updated": "2025-10-12T12:25:30.025874"
+  },
+  "Costa Titch": {
+    "genres": [
+      "amapiano",
+      "afropiano",
+      "bongo piano",
+      "afrobeats",
+      "afrobeat",
+      "gqom",
+      "bongo flava"
+    ],
+    "updated": "2025-10-12T12:25:30.500594"
+  },
+  "RAFFA": {
+    "genres": [
+      "afro house",
+      "latin house"
+    ],
+    "updated": "2025-10-12T12:25:30.762941"
+  },
+  "Odeal": {
+    "genres": [],
+    "updated": "2025-10-12T12:25:31.255910"
+  },
+  "Olamide": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropop",
+      "afropiano",
+      "azonto",
+      "afro adura",
+      "afro r&b",
+      "afroswing"
+    ],
+    "updated": "2025-10-12T12:25:31.555092"
+  },
+  "Lojay": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropop",
+      "alté",
+      "afropiano",
+      "afro r&b",
+      "amapiano"
+    ],
+    "updated": "2025-10-12T12:25:31.965728"
   }
 }
