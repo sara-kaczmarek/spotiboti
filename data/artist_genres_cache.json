@@ -421,5 +421,38 @@
       "amapiano"
     ],
     "updated": "2025-10-12T12:25:31.965728"
+  },
+  "Corth": {
+    "genres": [],
+    "updated": "2025-10-12T18:18:13.106898"
+  },
+  "Ames": {
+    "genres": [],
+    "updated": "2025-10-12T18:18:13.332774"
+  },
+  "Imagine Dragons": {
+    "genres": [],
+    "updated": "2025-10-12T18:18:13.553475"
+  },
+  "Kew": {
+    "genres": [
+      "brazilian funk"
+    ],
+    "updated": "2025-10-12T18:18:13.800331"
+  },
+  "Dave": {
+    "genres": [
+      "grime",
+      "uk grime",
+      "uk drill",
+      "drill"
+    ],
+    "updated": "2025-10-12T18:18:14.049179"
+  },
+  "ROSALÍA": {
+    "genres": [
+      "latin"
+    ],
+    "updated": "2025-10-12T18:18:14.377610"
   }
 }
