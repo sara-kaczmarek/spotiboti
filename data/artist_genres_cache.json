@@ -454,5 +454,170 @@
       "latin"
     ],
     "updated": "2025-10-12T18:18:14.377610"
+  },
+  "SZA": {
+    "genres": [
+      "egyptian pop",
+      "egyptian hip hop",
+      "arabic hip hop"
+    ],
+    "updated": "2025-10-13T12:29:38.589628"
+  },
+  "Mente Fuerte": {
+    "genres": [
+      "laïko"
+    ],
+    "updated": "2025-10-13T12:29:38.865095"
+  },
+  "Tems": {
+    "genres": [
+      "afrobeats",
+      "afro r&b",
+      "alté",
+      "afrobeat"
+    ],
+    "updated": "2025-10-13T12:29:39.122690"
+  },
+  "Ariana Grande": {
+    "genres": [
+      "pop"
+    ],
+    "updated": "2025-10-13T12:29:39.539595"
+  },
+  "Wizkid": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropop",
+      "azonto",
+      "afroswing",
+      "afro r&b",
+      "afropiano"
+    ],
+    "updated": "2025-10-13T12:29:39.789754"
+  },
+  "Muni Long": {
+    "genres": [],
+    "updated": "2025-10-13T12:29:40.043587"
+  },
+  "Ayra Starr": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropop",
+      "afro r&b",
+      "afropiano",
+      "afro soul"
+    ],
+    "updated": "2025-10-13T12:29:40.325500"
+  },
+  "1da Banton": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropop"
+    ],
+    "updated": "2025-10-13T12:29:40.576150"
+  },
+  "Eminem": {
+    "genres": [
+      "rap",
+      "hip hop"
+    ],
+    "updated": "2025-10-13T12:29:40.885396"
+  },
+  "Stormzy": {
+    "genres": [
+      "grime",
+      "uk grime",
+      "uk drill"
+    ],
+    "updated": "2025-10-13T12:29:41.178433"
+  },
+  "Khalid": {
+    "genres": [],
+    "updated": "2025-10-13T12:29:41.516308"
+  },
+  "Kanye West": {
+    "genres": [
+      "rap"
+    ],
+    "updated": "2025-10-13T12:29:41.950039"
+  },
+  "Omah Lay": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropop",
+      "afro r&b",
+      "afropiano",
+      "afro soul"
+    ],
+    "updated": "2025-10-13T12:29:42.160254"
+  },
+  "Babyboy AV": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropop",
+      "afropiano",
+      "afro r&b"
+    ],
+    "updated": "2025-10-13T12:29:42.364834"
+  },
+  "Yarden": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afro r&b",
+      "alté",
+      "afro soul",
+      "afropop"
+    ],
+    "updated": "2025-10-13T12:29:42.612578"
+  },
+  "Fido": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afro adura",
+      "afropiano",
+      "afropop",
+      "afro r&b"
+    ],
+    "updated": "2025-10-13T12:29:42.911585"
+  },
+  "Tmaro": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afro r&b",
+      "afropop"
+    ],
+    "updated": "2025-10-13T12:29:43.160628"
+  },
+  "Gabzy": {
+    "genres": [
+      "afrobeats",
+      "afroswing",
+      "alté",
+      "afro r&b",
+      "afrobeat",
+      "afro soul",
+      "afropop"
+    ],
+    "updated": "2025-10-13T12:29:43.431967"
+  },
+  "Tay Iwar": {
+    "genres": [
+      "alté",
+      "afro r&b",
+      "afrobeats",
+      "afro soul",
+      "afrobeat",
+      "afroswing",
+      "afropop"
+    ],
+    "updated": "2025-10-13T12:29:43.679306"
   }
 }
