@@ -815,5 +815,153 @@
       "trap soul"
     ],
     "updated": "2025-10-14T01:04:45.440181"
+  },
+  "The Verve": {
+    "genres": [
+      "britpop",
+      "shoegaze"
+    ],
+    "updated": "2025-10-14T18:21:30.599654"
+  },
+  "Craig David": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:31.087566"
+  },
+  "Lil Wayne": {
+    "genres": [
+      "rap",
+      "hip hop"
+    ],
+    "updated": "2025-10-14T18:21:31.345976"
+  },
+  "Forwes": {
+    "genres": [
+      "afroswing",
+      "uk r&b"
+    ],
+    "updated": "2025-10-14T18:21:31.682374"
+  },
+  "Roy Woods": {
+    "genres": [
+      "trap soul"
+    ],
+    "updated": "2025-10-14T18:21:32.025705"
+  },
+  "Kid Cudi": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:32.290691"
+  },
+  "Monica": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:32.575174"
+  },
+  "Orion Sun": {
+    "genres": [
+      "alternative r&b",
+      "bedroom pop"
+    ],
+    "updated": "2025-10-14T18:21:32.829023"
+  },
+  "Thundercat": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:33.081635"
+  },
+  "Myles Smith": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:33.466779"
+  },
+  "Sam Smith": {
+    "genres": [
+      "soft pop"
+    ],
+    "updated": "2025-10-14T18:21:33.860117"
+  },
+  "Billie Eilish": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:34.198111"
+  },
+  "Dreamville": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:34.502207"
+  },
+  "Trinidad Cardona": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:34.746197"
+  },
+  "Bien": {
+    "genres": [
+      "gengetone",
+      "bongo flava",
+      "rumba congolaise",
+      "afropop",
+      "afrobeats",
+      "afro soul",
+      "afro r&b",
+      "afrobeat",
+      "bongo piano"
+    ],
+    "updated": "2025-10-14T18:21:35.250110"
+  },
+  "Nicki Minaj": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:35.539547"
+  },
+  "Harry Styles": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:35.822245"
+  },
+  "Wu-Tang Clan": {
+    "genres": [
+      "old school hip hop",
+      "east coast hip hop",
+      "hip hop",
+      "gangster rap",
+      "hardcore hip hop"
+    ],
+    "updated": "2025-10-14T18:21:36.067456"
+  },
+  "Russ": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:36.412261"
+  },
+  "DESTIN CONRAD": {
+    "genres": [
+      "alternative r&b"
+    ],
+    "updated": "2025-10-14T18:21:36.763947"
+  },
+  "Bryson Tiller": {
+    "genres": [
+      "trap soul",
+      "r&b"
+    ],
+    "updated": "2025-10-14T18:21:37.050745"
+  },
+  "Sade": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:37.283694"
+  },
+  "2Pac": {
+    "genres": [
+      "old school hip hop",
+      "gangster rap",
+      "west coast hip hop",
+      "g-funk",
+      "hip hop"
+    ],
+    "updated": "2025-10-14T18:21:37.598018"
+  },
+  "Singah": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "kizomba",
+      "afropop"
+    ],
+    "updated": "2025-10-14T18:21:37.819108"
+  },
+  "Blxst": {
+    "genres": [],
+    "updated": "2025-10-14T18:21:38.040233"
   }
 }
