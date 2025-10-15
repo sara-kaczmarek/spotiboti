@@ -1000,5 +1000,131 @@
   "Doja Cat": {
     "genres": [],
     "updated": "2025-10-15T01:06:26.804959"
+  },
+  "Destiny's Child": {
+    "genres": [],
+    "updated": "2025-10-15T12:30:56.685958"
+  },
+  "Alikiba": {
+    "genres": [
+      "bongo flava",
+      "bongo piano",
+      "singeli",
+      "afrobeats",
+      "gengetone"
+    ],
+    "updated": "2025-10-15T12:30:57.005930"
+  },
+  "RAYE": {
+    "genres": [],
+    "updated": "2025-10-15T12:30:57.754278"
+  },
+  "Joy Crookes": {
+    "genres": [
+      "alternative r&b"
+    ],
+    "updated": "2025-10-15T12:30:58.008113"
+  },
+  "NAV": {
+    "genres": [
+      "melodic rap"
+    ],
+    "updated": "2025-10-15T12:30:58.550152"
+  },
+  "Aya Nakamura": {
+    "genres": [
+      "french r&b",
+      "pop urbaine"
+    ],
+    "updated": "2025-10-15T12:30:58.932372"
+  },
+  "Ciara": {
+    "genres": [],
+    "updated": "2025-10-15T12:30:59.349310"
+  },
+  "Katie Melua": {
+    "genres": [],
+    "updated": "2025-10-15T12:30:59.725807"
+  },
+  "Stalk Ashley": {
+    "genres": [
+      "dancehall"
+    ],
+    "updated": "2025-10-15T12:31:00.314957"
+  },
+  "Jack Harlow": {
+    "genres": [],
+    "updated": "2025-10-15T12:31:00.661517"
+  },
+  "Fatboibari": {
+    "genres": [],
+    "updated": "2025-10-15T12:31:00.976659"
+  },
+  "Chris Brown": {
+    "genres": [
+      "r&b"
+    ],
+    "updated": "2025-10-15T12:31:01.366982"
+  },
+  "KALEO": {
+    "genres": [],
+    "updated": "2025-10-15T12:31:01.757403"
+  },
+  "Young Rog": {
+    "genres": [],
+    "updated": "2025-10-15T12:31:02.274151"
+  },
+  "Angus & Julia Stone": {
+    "genres": [],
+    "updated": "2025-10-15T12:31:02.636839"
+  },
+  "sped up nightcore": {
+    "genres": [
+      "nightcore"
+    ],
+    "updated": "2025-10-15T12:31:02.913277"
+  },
+  "Diddy": {
+    "genres": [
+      "hip hop",
+      "east coast hip hop"
+    ],
+    "updated": "2025-10-15T12:31:03.183935"
+  },
+  "Lucky Daye": {
+    "genres": [],
+    "updated": "2025-10-15T12:31:03.498758"
+  },
+  "Jalen Santoy": {
+    "genres": [],
+    "updated": "2025-10-15T12:31:03.992050"
+  },
+  "Tech N9ne": {
+    "genres": [
+      "horrorcore"
+    ],
+    "updated": "2025-10-15T12:31:04.339677"
+  },
+  "Octavian": {
+    "genres": [
+      "grime",
+      "uk grime",
+      "afroswing"
+    ],
+    "updated": "2025-10-15T12:31:04.715269"
+  },
+  "IAMDDB": {
+    "genres": [
+      "alternative r&b"
+    ],
+    "updated": "2025-10-15T12:31:05.302219"
+  },
+  "Stick Figure": {
+    "genres": [
+      "reggae",
+      "reggae rock",
+      "roots reggae"
+    ],
+    "updated": "2025-10-15T12:31:05.631209"
   }
 }
