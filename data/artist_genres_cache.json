@@ -963,5 +963,42 @@
   "Blxst": {
     "genres": [],
     "updated": "2025-10-14T18:21:38.040233"
+  },
+  "The Neighbourhood": {
+    "genres": [],
+    "updated": "2025-10-15T01:06:24.906399"
+  },
+  "Miguel": {
+    "genres": [
+      "r&b"
+    ],
+    "updated": "2025-10-15T01:06:25.177230"
+  },
+  "Emmit Fenn": {
+    "genres": [],
+    "updated": "2025-10-15T01:06:25.390296"
+  },
+  "GoldLink": {
+    "genres": [],
+    "updated": "2025-10-15T01:06:25.642106"
+  },
+  "Bayou": {
+    "genres": [
+      "egyptian hip hop",
+      "arabic hip hop"
+    ],
+    "updated": "2025-10-15T01:06:25.959137"
+  },
+  "D Smoke": {
+    "genres": [],
+    "updated": "2025-10-15T01:06:26.218674"
+  },
+  "Halle": {
+    "genres": [],
+    "updated": "2025-10-15T01:06:26.476011"
+  },
+  "Doja Cat": {
+    "genres": [],
+    "updated": "2025-10-15T01:06:26.804959"
   }
 }
