@@ -1177,5 +1177,52 @@
   "Zae France": {
     "genres": [],
     "updated": "2025-10-15T18:21:28.374875"
+  },
+  "YG Marley": {
+    "genres": [
+      "reggae"
+    ],
+    "updated": "2025-10-16T12:30:54.494523"
+  },
+  "Sean Paul": {
+    "genres": [
+      "dancehall"
+    ],
+    "updated": "2025-10-16T12:30:55.012569"
+  },
+  "Tee Grizzley": {
+    "genres": [],
+    "updated": "2025-10-16T12:30:55.297831"
+  },
+  "Libianca": {
+    "genres": [
+      "afrobeats",
+      "afrobeat"
+    ],
+    "updated": "2025-10-16T12:30:55.583107"
+  },
+  "Ari Lennox": {
+    "genres": [
+      "alternative r&b",
+      "neo soul"
+    ],
+    "updated": "2025-10-16T12:30:55.872516"
+  },
+  "Victony": {
+    "genres": [
+      "afrobeats",
+      "afrobeat",
+      "afropop",
+      "afropiano",
+      "afro r&b",
+      "alté",
+      "afro soul",
+      "amapiano"
+    ],
+    "updated": "2025-10-16T12:30:56.203594"
+  },
+  "Alessia Cara": {
+    "genres": [],
+    "updated": "2025-10-16T12:30:56.631115"
   }
 }
