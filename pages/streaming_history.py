@@ -23,12 +23,12 @@ def load_enriched_data():
     # Use relative path from project root
     enriched_file = 'data/enriched_spotify_data.json'
 
-    # If file doesn't exist, build it from raw streaming data
+    # If file doesn't exist, download from GitHub release or build from raw data
     if not os.path.exists(enriched_file):
-        st.warning("🔧 Enriched data file not found. Building from raw streaming history... This may take a few minutes on first load.")
+        st.info("🔧 Enriched data file not found. Downloading from GitHub release...")
 
         try:
-            from data_builder import build_enriched_data_from_raw
+            from data_builder import ensure_enriched_data_exists
             from spotify_api import SpotifyAPI
 
             # Show progress
@@ -37,30 +37,28 @@ def load_enriched_data():
             def progress_callback(msg):
                 progress_placeholder.info(f"⏳ {msg}")
 
-            # Try to get Spotify API for genre enrichment
+            # Try to get Spotify API for potential fallback to building
             try:
                 api = SpotifyAPI()
-                progress_callback("Building with genre enrichment...")
-                build_enriched_data_from_raw(
-                    spotify_api=api,
-                    output_file=enriched_file,
-                    enrich_genres=True,
-                    progress_callback=progress_callback
-                )
-            except Exception as e:
-                st.warning(f"Building without genre enrichment: {e}")
-                progress_callback("Building without genre enrichment...")
-                build_enriched_data_from_raw(
-                    spotify_api=None,
-                    output_file=enriched_file,
-                    enrich_genres=False,
-                    progress_callback=progress_callback
-                )
+            except:
+                api = None
 
-            progress_placeholder.success("✅ Enriched data built successfully!")
+            # This will try to download first, then build if download fails
+            success = ensure_enriched_data_exists(
+                spotify_api=api,
+                output_file=enriched_file,
+                progress_callback=progress_callback,
+                try_download_first=True
+            )
+
+            if success:
+                progress_placeholder.success("✅ Enriched data ready!")
+            else:
+                st.error("❌ Failed to download or build enriched data")
+                return None
 
         except Exception as e:
-            st.error(f"❌ Failed to build enriched data: {e}")
+            st.error(f"❌ Failed to get enriched data: {e}")
             return None
 
     # Load the enriched data
