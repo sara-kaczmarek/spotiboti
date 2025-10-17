@@ -27,16 +27,17 @@ wheels/
 .env
 .spotify_cache
 *.plist
+
+# JSON files - specific ignores
 sara_profile.json
 spotiboti_memory.json
-
-# All JSON data files EXCEPT cache files
-*.json
-!requirements.json
-!package.json
-!data/artist_genres_cache.json
-# Ignore enriched data - will be built from raw streaming data
 data/enriched_spotify_data.json
+data/track_artwork_cache.json
+
+# NOTE: streaming_data/*.json files are NOT tracked in git because they're large (245MB total)
+# The app will download pre-built enriched data from GitHub releases instead
+# If you want to track them, remove the line below:
+streaming_data/*.json
 
 # OS files
 .DS_Store
@@ -51,3 +52,6 @@ Thumbs.db
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Logs
+*.log
