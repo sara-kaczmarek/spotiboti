@@ -248,10 +248,25 @@ def download_enriched_data_from_release(output_file='data/enriched_spotify_data.
                         progress_callback(f"Downloading... {percent:.1f}% ({downloaded // 1024 // 1024}MB / {total_size // 1024 // 1024}MB)")
 
         print(f"✅ Successfully downloaded enriched data")
-        return True
+
+        # Verify the downloaded file is valid JSON
+        try:
+            with open(output_file, 'r') as f:
+                json.load(f)
+            print(f"✅ Verified: File is valid JSON")
+            return True
+        except json.JSONDecodeError as e:
+            print(f"❌ Downloaded file is not valid JSON: {e}")
+            # Remove corrupted file
+            if os.path.exists(output_file):
+                os.remove(output_file)
+            return False
 
     except Exception as e:
         print(f"⚠️  Failed to download from release: {e}")
+        # Clean up partial download if it exists
+        if os.path.exists(output_file):
+            os.remove(output_file)
         return False
 
 

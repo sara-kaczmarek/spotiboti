@@ -23,13 +23,12 @@ def load_enriched_data():
     # Use relative path from project root
     enriched_file = 'data/enriched_spotify_data.json'
 
-    # If file doesn't exist, download from GitHub release or build from raw data
+    # If file doesn't exist, download from GitHub release (no building fallback)
     if not os.path.exists(enriched_file):
-        st.info("🔧 Enriched data file not found. Downloading from GitHub release...")
+        st.info("📥 Enriched data file not found. Downloading from GitHub release...")
 
         try:
-            from data_builder import ensure_enriched_data_exists
-            from spotify_api import SpotifyAPI
+            from data_builder import download_enriched_data_from_release
 
             # Show progress
             progress_placeholder = st.empty()
@@ -37,28 +36,20 @@ def load_enriched_data():
             def progress_callback(msg):
                 progress_placeholder.info(f"⏳ {msg}")
 
-            # Try to get Spotify API for potential fallback to building
-            try:
-                api = SpotifyAPI()
-            except:
-                api = None
-
-            # This will try to download first, then build if download fails
-            success = ensure_enriched_data_exists(
-                spotify_api=api,
+            # Download from release (no fallback to building)
+            success = download_enriched_data_from_release(
                 output_file=enriched_file,
-                progress_callback=progress_callback,
-                try_download_first=True
+                progress_callback=progress_callback
             )
 
             if success:
-                progress_placeholder.success("✅ Enriched data ready!")
+                progress_placeholder.success("✅ Enriched data downloaded successfully!")
             else:
-                st.error("❌ Failed to download or build enriched data")
+                st.error("❌ Failed to download enriched data from GitHub release. Please check your internet connection or try again later.")
                 return None
 
         except Exception as e:
-            st.error(f"❌ Failed to get enriched data: {e}")
+            st.error(f"❌ Failed to download enriched data: {e}")
             return None
 
     # Load the enriched data
