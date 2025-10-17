@@ -67,3 +67,44 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+      - name: Update GitHub release with new data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Check if enriched data file exists and was updated
+          if [ -f "data/enriched_spotify_data.json" ]; then
+            echo "📦 Updating GitHub release with new enriched data..."
+
+            # Get today's date for release tag
+            RELEASE_TAG="v$(date +'%Y.%m.%d')"
+
+            # Check if release exists
+            if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+              echo "📝 Updating existing release: $RELEASE_TAG"
+              # Delete old asset and upload new one
+              gh release upload "$RELEASE_TAG" data/enriched_spotify_data.json --clobber
+            else
+              echo "🆕 Creating new release: $RELEASE_TAG"
+              # Get record count for release notes
+              RECORD_COUNT=$(python3 -c "import json; print(len(json.load(open('data/enriched_spotify_data.json'))))" 2>/dev/null || echo "unknown")
+
+              # Create new release
+              gh release create "$RELEASE_TAG" \
+                --title "Enriched Data - $(date +'%Y-%m-%d')" \
+                --notes "📊 Enriched Spotify streaming history dataset
+
+**Auto-updated:** $(date +'%Y-%m-%d %H:%M UTC')
+
+- Contains $RECORD_COUNT listening records
+- Includes genre enrichment
+- File size: $(du -h data/enriched_spotify_data.json | cut -f1)
+
+This release is automatically updated every 6 hours by the GitHub Actions workflow." \
+                data/enriched_spotify_data.json
+            fi
+
+            echo "✅ Release updated successfully!"
+          else
+            echo "⚠️  Enriched data file not found, skipping release update"
+          fi
