@@ -12,12 +12,57 @@ from datetime import datetime
 from pathlib import Path
 
 
+def resolve_project_path(relative_path):
+    """
+    Resolve a path relative to the project root.
+    Works from any directory (pages/, root, etc.)
+    """
+    # Try different base paths
+    potential_bases = [
+        os.getcwd(),  # Current working directory
+        os.path.dirname(__file__),  # Same directory as this script
+        os.path.join(os.path.dirname(__file__), '..'),  # Parent directory (if in pages/)
+    ]
+
+    for base in potential_bases:
+        full_path = os.path.join(base, relative_path)
+        full_path = os.path.abspath(full_path)
+
+        # Check if this path exists or if its parent directory exists (for files to be created)
+        if os.path.exists(full_path) or os.path.exists(os.path.dirname(full_path)):
+            return full_path
+
+    # Default: return relative to current working directory
+    return os.path.abspath(relative_path)
+
+
 def load_raw_streaming_data(data_dir='streaming_data'):
     """Load all raw Spotify streaming history JSON files"""
-    audio_files = glob.glob(os.path.join(data_dir, 'Streaming_History_Audio_*.json'))
+    # Try to find the data directory - could be relative to cwd or script location
+    search_paths = [
+        data_dir,  # Relative to current working directory
+        os.path.join(os.path.dirname(__file__), data_dir),  # Relative to this script
+        os.path.join(os.path.dirname(__file__), '..', data_dir),  # One level up from pages/
+    ]
+
+    audio_files = []
+    found_dir = None
+
+    for path in search_paths:
+        pattern = os.path.join(path, 'Streaming_History_Audio_*.json')
+        files = glob.glob(pattern)
+        if files:
+            audio_files = files
+            found_dir = path
+            break
 
     if not audio_files:
-        raise FileNotFoundError(f"No streaming history files found in {data_dir}/")
+        # Give helpful error with all paths tried
+        tried_paths = '\n  '.join([os.path.abspath(p) for p in search_paths])
+        raise FileNotFoundError(
+            f"No streaming history files found. Tried:\n  {tried_paths}\n"
+            f"Current working directory: {os.getcwd()}"
+        )
 
     print(f"📁 Found {len(audio_files)} raw streaming history files")
 
@@ -49,6 +94,8 @@ def load_raw_streaming_data(data_dir='streaming_data'):
 
 def check_enriched_data_exists(output_file='data/enriched_spotify_data.json'):
     """Check if enriched data file exists and return basic info"""
+    output_file = resolve_project_path(output_file)
+
     if not os.path.exists(output_file):
         return False, None
 
@@ -83,6 +130,10 @@ def build_enriched_data_from_raw(spotify_api=None, output_file='data/enriched_sp
     print(f"\n{'='*60}")
     print(f"🔧 Building enriched dataset from raw streaming history")
     print(f"{'='*60}\n")
+
+    # Resolve output file path
+    output_file = resolve_project_path(output_file)
+    print(f"📁 Output file: {output_file}")
 
     # Load raw data
     if progress_callback:
