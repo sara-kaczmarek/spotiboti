@@ -133,6 +133,10 @@ def build_enriched_data_from_raw(spotify_api=None, output_file='data/enriched_sp
     # Ensure directory exists
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
+    # Convert timestamps to strings for JSON serialization
+    if 'ts' in df.columns:
+        df['ts'] = df['ts'].astype(str)
+
     # Convert to JSON and save
     data = df.to_dict('records')
     with open(output_file, 'w') as f:
