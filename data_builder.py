@@ -10,6 +10,8 @@ import glob
 import pandas as pd
 from datetime import datetime
 from pathlib import Path
+import urllib.request
+import shutil
 
 
 def resolve_project_path(relative_path):
@@ -199,17 +201,74 @@ def build_enriched_data_from_raw(spotify_api=None, output_file='data/enriched_sp
     return df
 
 
+def download_enriched_data_from_release(output_file='data/enriched_spotify_data.json',
+                                         release_url=None,
+                                         progress_callback=None):
+    """
+    Download enriched data file from GitHub release.
+
+    Args:
+        output_file: Path to save enriched data
+        release_url: URL to the release asset (if None, uses latest release)
+        progress_callback: Function for progress updates
+
+    Returns:
+        True if downloaded successfully, False otherwise
+    """
+    if release_url is None:
+        # Default to latest release
+        release_url = "https://github.com/sara-kaczmarek/spotiboti/releases/latest/download/enriched_spotify_data.json"
+
+    output_file = resolve_project_path(output_file)
+
+    print(f"📥 Downloading enriched data from GitHub release...")
+    if progress_callback:
+        progress_callback("Downloading enriched dataset from GitHub...")
+
+    try:
+        # Ensure directory exists
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
+
+        # Download with progress
+        with urllib.request.urlopen(release_url) as response:
+            total_size = int(response.headers.get('Content-Length', 0))
+            downloaded = 0
+            chunk_size = 8192
+
+            with open(output_file, 'wb') as f:
+                while True:
+                    chunk = response.read(chunk_size)
+                    if not chunk:
+                        break
+                    f.write(chunk)
+                    downloaded += len(chunk)
+
+                    if total_size > 0 and progress_callback:
+                        percent = (downloaded / total_size) * 100
+                        progress_callback(f"Downloading... {percent:.1f}% ({downloaded // 1024 // 1024}MB / {total_size // 1024 // 1024}MB)")
+
+        print(f"✅ Successfully downloaded enriched data")
+        return True
+
+    except Exception as e:
+        print(f"⚠️  Failed to download from release: {e}")
+        return False
+
+
 def ensure_enriched_data_exists(spotify_api=None, force_rebuild=False,
                                  output_file='data/enriched_spotify_data.json',
-                                 progress_callback=None):
+                                 progress_callback=None,
+                                 try_download_first=True):
     """
-    Ensure enriched data file exists, building it if necessary.
+    Ensure enriched data file exists. Tries to download from GitHub release first,
+    then falls back to building from raw data if download fails.
 
     Args:
         spotify_api: SpotifyAPI instance (for genre enrichment)
         force_rebuild: Force rebuild even if file exists
         output_file: Path to enriched data file
         progress_callback: Function for progress updates
+        try_download_first: Try downloading from GitHub release before building
 
     Returns:
         True if data is ready, False if failed
@@ -225,8 +284,22 @@ def ensure_enriched_data_exists(spotify_api=None, force_rebuild=False,
     if force_rebuild:
         print("🔄 Force rebuild requested")
     else:
-        print("⚠️  Enriched data file not found. Building from raw data...")
+        print("⚠️  Enriched data file not found.")
 
+        # Try downloading from release first
+        if try_download_first:
+            print("📥 Attempting to download from GitHub release...")
+            if progress_callback:
+                progress_callback("Downloading enriched dataset from GitHub release...")
+
+            if download_enriched_data_from_release(output_file, progress_callback=progress_callback):
+                return True
+
+            print("⚠️  Download failed. Falling back to building from raw data...")
+            if progress_callback:
+                progress_callback("Download failed. Building from raw streaming history...")
+
+    # Build from raw data as fallback
     try:
         build_enriched_data_from_raw(
             spotify_api=spotify_api,
