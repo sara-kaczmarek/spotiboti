@@ -29,13 +29,50 @@ sys.modules['streamlit'] = MockStreamlit()
 from spotify_api import SpotifyAPI
 
 def load_existing_data():
-    """Load existing enriched data"""
+    """Load existing enriched data, build if missing"""
+    data_file = 'data/enriched_spotify_data.json'
+
+    # Check if file exists
+    if not os.path.exists(data_file):
+        print("⚠️  Enriched data file not found.")
+        print("🔧 Building from raw streaming history...")
+
+        try:
+            from data_builder import build_enriched_data_from_raw
+            from spotify_api import SpotifyAPI
+
+            # Try to build with API
+            try:
+                api = SpotifyAPI()
+                df = build_enriched_data_from_raw(
+                    spotify_api=api,
+                    output_file=data_file,
+                    enrich_genres=True
+                )
+                print("✅ Successfully built enriched dataset with genres!")
+                return df
+            except Exception as e:
+                print(f"⚠️  Building without genre enrichment: {e}")
+                df = build_enriched_data_from_raw(
+                    spotify_api=None,
+                    output_file=data_file,
+                    enrich_genres=False
+                )
+                print("✅ Successfully built enriched dataset (no genres)!")
+                return df
+
+        except Exception as e:
+            print(f"❌ Failed to build enriched data: {e}")
+            print("📊 Starting with empty dataset")
+            return pd.DataFrame()
+
+    # Load existing file
     try:
-        with open('data/enriched_spotify_data.json', 'r') as f:
+        with open(data_file, 'r') as f:
             data = json.load(f)
         return pd.DataFrame(data)
-    except FileNotFoundError:
-        print("⚠️ No existing enriched data found. Starting fresh.")
+    except Exception as e:
+        print(f"❌ Error loading enriched data: {e}")
         return pd.DataFrame()
 
 def fetch_recent_tracks():

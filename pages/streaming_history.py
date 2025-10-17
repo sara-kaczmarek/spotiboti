@@ -19,14 +19,56 @@ st.set_page_config(
 )
 
 def load_enriched_data():
-    """Load pre-enriched data with genres if available"""
+    """Load pre-enriched data with genres if available, build if missing"""
     # Use relative path from project root
     enriched_file = 'data/enriched_spotify_data.json'
+
+    # If file doesn't exist, build it from raw streaming data
+    if not os.path.exists(enriched_file):
+        st.warning("🔧 Enriched data file not found. Building from raw streaming history... This may take a few minutes on first load.")
+
+        try:
+            from data_builder import build_enriched_data_from_raw
+            from spotify_api import SpotifyAPI
+
+            # Show progress
+            progress_placeholder = st.empty()
+
+            def progress_callback(msg):
+                progress_placeholder.info(f"⏳ {msg}")
+
+            # Try to get Spotify API for genre enrichment
+            try:
+                api = SpotifyAPI()
+                progress_callback("Building with genre enrichment...")
+                build_enriched_data_from_raw(
+                    spotify_api=api,
+                    output_file=enriched_file,
+                    enrich_genres=True,
+                    progress_callback=progress_callback
+                )
+            except Exception as e:
+                st.warning(f"Building without genre enrichment: {e}")
+                progress_callback("Building without genre enrichment...")
+                build_enriched_data_from_raw(
+                    spotify_api=None,
+                    output_file=enriched_file,
+                    enrich_genres=False,
+                    progress_callback=progress_callback
+                )
+
+            progress_placeholder.success("✅ Enriched data built successfully!")
+
+        except Exception as e:
+            st.error(f"❌ Failed to build enriched data: {e}")
+            return None
+
+    # Load the enriched data
     if os.path.exists(enriched_file):
         with open(enriched_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
         df = pd.DataFrame(data)
-        df['ts'] = pd.to_datetime(df['ts'])
+        df['ts'] = pd.to_datetime(df['ts'], format='mixed')
         df['date'] = df['ts'].dt.date
         df['year'] = df['ts'].dt.year
         df['month'] = df['ts'].dt.month
@@ -35,6 +77,7 @@ def load_enriched_data():
         df['minutes_played'] = df['ms_played'] / 60000
         df['hours_played'] = df['minutes_played'] / 60
         return df
+
     return None
 
 def load_spotify_data(use_api=False, _spotify_api=None):

@@ -1,1 +1,1 @@
-data/enriched_spotify_data.json filter=lfs diff=lfs merge=lfs -text
+# Git LFS tracking removed - enriched data is now built from raw files
